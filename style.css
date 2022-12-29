@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    margin: 2% 15%;
+    justify-content: space-between;
+}
+
+.header_logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo__blueCircle {
+    background: #316099;
+    border: 2px solid #316099;
+    width: 30px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.logo__whiteCircle {
+    background: #FFFFFF;
+    width: 30px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #316099;
+    margin-left: -25%;
+}
+
+.header_rightBtn {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*main*/
+
+.mainInfo_contain {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainInfo__shadow {
+    position: absolute;
+    background-image: url('img/Rectangle-1.png');
+
+    background-position: center;
+    opacity: .2;
+    width: 70%;
+    height: 20%;
+    margin-right: 15%;
+    z-index: -1;
+    align-self: flex-end;
+    box-shadow: 0px -16px 100px teal;
+    filter: blur(25px);
+}
+
+.mainInfo__leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.New__Automation{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 116%;
+
+    letter-spacing: 0.04em;
+
+    color: #1F3F68;
+
+    max-width: 504px;
+}
+
+.main__lorem {
+    max-width: 425px;
+    max-height: 82px;
+    margin-top: 6%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+
+    letter-spacing: 0.05em;
+
+    color: #1F3F68;
+
+    opacity: 0.6;
+
+}
+
+.see__btn {
+    max-width: 220px;
+    height: 56px;
+    margin-top: 14%;
+
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px 15px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.see__btn p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 162%;
+
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.pic__contain {
+    width: 648px;
+    height: 550px;
+}
+
+.main__pic {
+    max-width: 100%;
+    height: 100%;
+    background-image: url('img/illustration.png');
+    background-repeat: no-repeat;
+}
+
+/* TEXT: What we do... */
+
+.about_text {
+    position: relative;
+    margin-top: 2.5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4vh;
+    line-height: 128%;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+/*cards*/
+
+.cards_contain {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 430px;
+    height: 495px;
+
+    background: #FFFFFF;
+
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.card:not(.third_card) {
+    margin-right: 2%;
+}
+
+.card__img {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.card__name {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+
+    max-width: 339.1px;
+    max-height: 56.69px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    letter-spacing: 0.05em;
+
+    color: #1F3F68;
+}
+
+.card__text {
+    margin-top: 13%;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+
+    letter-spacing: 0.05em;
+
+    color: #1F3F68;
+
+    opacity: 0.6;
+}
+
+.card__learnMore {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    text-decoration: none;
+
+    letter-spacing: 0.05em;
+
+    color: #5A98D0;
+
+    align-self: flex-start;
+    margin-top: 5%;
+    padding-left: 10%;
+
+    cursor: pointer;
+}
+
+/*TEXT: Our Finished Project*/
+
+.finished_text {
+    margin-top: 2.5%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 128%;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.finisdhed_textLorem {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 162%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5%;
+    
+    text-align: center;
+    letter-spacing: 0.05em;
+    
+    color: #222222;
+}
+
+/*projects cards*/
+
+.contain_projects_card {
+    display: flex;
+    height: 500px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+/*smart home card*/
+
+.smart_home_card {
+    background-image: url('img/alberto-castillo-q-mx4mSkK9zeo-unsplash.png');
+    background-repeat: no-repeat;
+    max-height: 500px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.smart_home_card_lins {
+    background-image: url('img/Rectangle.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px 10px 20px 20px;
+}
+
+
+.smart_home_card_lins p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 144%;
+    padding-top: 5%;
+    padding-right: 5%;
+    
+    text-align: right;
+    letter-spacing: 0.05em;
+    
+    color: #FFFFFF;
+}
+
+/*down cards*/
+
+.down_cards_contain {
+    display: flex;
+    justify-content: center;
+    height: 427px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1.5%;
+}
+
+/*phone card*/
+
+.app__card {
+    background-image: url('img/Dribble iphonex mockup.png');
+    background-repeat: no-repeat;
+    max-height: 500px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.app__card__linse {
+    background-image: url('img/Rectangle 2.2.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.app__card__linse p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 164%;
+
+    letter-spacing: 0.05em;
+
+    padding: 5%;
+    color: #FFFFFF;
+}
+
+/*car card*/
+
+.car__card {
+    margin-left: 3%;
+    background-image: url('img/upload.png');
+    background-repeat: no-repeat;
+    max-height: 500px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.car__card__linse {
+    background-image: url('img/Rectangle 2.3.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px 10px 30px 30px;
+}
+
+.car__card__linse p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 164%;
+
+    letter-spacing: 0.05em;
+
+    padding: 5%;
+    color: #FFFFFF;
+}
+
+/*footer*/
+
+footer {
+    max-height: 650px;
+    background: #316099;
+
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 5%;
+}
+
+.footer__upper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intersted__text h2 {
+    min-height: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 128%;
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.intersted__text p {
+    max-width: 490px;
+    max-height: 80px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162% ;
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 236.63px;
+    height: 56px;
+    cursor: pointer;
+
+    background: #5A98D0;
+}
+
+.footer__btn span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.footer__hr {
+    margin-top: 5%;
+    opacity: 0.4;
+
+    border: 1px solid #FFFFFF;
+}
+
+.footer__list ol{
+    padding-left: 1.5%;
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__list li {
+    width: 20%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.footer__copy {
+    height: 52px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 162%;
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+    opacity: 0.4;
+}
